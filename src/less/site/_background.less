@@ -1,0 +1,36 @@
+#background {
+
+  &-wrap {
+
+    background-color: @white;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    overflow: hidden;
+  
+  }
+
+  &-layer {
+
+    &-1 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+    }
+
+    &-2 {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      z-index: 1;
+      & img {
+        width: 100%;
+      }
+    }
+
+  }
+
+}

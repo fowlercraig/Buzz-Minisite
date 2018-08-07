@@ -1,0 +1,39 @@
+#content {
+
+  &-wrap {
+    .cover();
+    z-index: 99;
+  }
+
+  &-headline {
+    padding-top: 100px;
+    line-height: 1.2;
+    font-weight: 600;
+    & .logo {
+      margin-bottom: 65px
+    }
+    & .headline {
+      font-weight: 600;
+      color: @black;
+      font-size: 72px;;
+    }
+  }
+
+  &-description {
+
+    color: @white;
+    padding-bottom: 50px;
+    -webkit-font-smoothing: antialiased;
+
+    & .title {
+      margin-bottom: @spacer*.25;
+      font-weight: 600;
+    }
+    & .body {
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+  }
+
+}

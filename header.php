@@ -27,15 +27,4 @@
 
 <body class="fs-grid">
   <div id="wrapper">
-    <header id="nav" class="header">
-      <div class="fs-row">
-        <menu id="nav-main" class="fs-cell fs-all-full">
-          <a href="/" id="nav-logo" class=""><?php bloginfo('name' );?></a>
-<?php if($lNav): foreach ( $lNav as $navItem ) : ?>
-<?php $current = ( $navItem->object_id == get_queried_object_id() ) ? 'current' : ''; ?>
-          <a href="<?php echo $navItem->url; ?>" title="<?php echo $navItem->title; ?>" class="<?php echo $current ?>"><?php echo $navItem->title; ?></a>
-<?php endforeach; endif; ?>
-        </menu>
-      </div>
-    </header>
     <div id="contents">
