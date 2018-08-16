@@ -66,7 +66,7 @@
   <div id="background-layer-1">
     <img src="assets/background-bottom.svg" class="img-responsive">
   </div>
-  <div id="background-layer-2" class="background" data-background-options='{"source":{"0px":"assets/option3.png","980px":"assets/background-bottom-2.svg"}}'></div>
+  <div id="background-layer-2" class="background" data-background-options='{"source":{"0px":"<?php print PUBLIC_DIR . 'option3.png'; ?>","980px":"<?php print PUBLIC_DIR . 'background-bottom-2.svg'; ?>"}}'></div>
 </div>
 
 <?php get_footer(); ?>
