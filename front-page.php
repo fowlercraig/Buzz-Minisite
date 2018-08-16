@@ -40,7 +40,7 @@
   <div id="layer-band-1" class="pinned pinned--top">
     <div class="fs-row">
       <div class="fs-cell fs-lg-4 fs-lg-push-3 fs-md-3 fs-sm-hide">
-        <img src="assets/@2xAir_navy.png" class="img-responsive">
+        <img src="<?php print PUBLIC_DIR . '@2xAir_navy.png'; ?>" class="img-responsive">
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@
     <div id="layer-band-2-wrapper">
       <div class="fs-row">
         <div class="fs-cell fs-lg-3 fs-md-3 fs-sm-half fs-sm-push-half fs-lg-justify-end">
-          <img src="assets/@2xAir_hero.png" class="img-responsive">
+          <img src="<?php print PUBLIC_DIR . '@2xAir_hero.png'; ?>" class="img-responsive">
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@
   <div id="layer-band-3" class="pinned pinned--bottom">
     <div class="fs-row">
       <div class="fs-cell fs-lg-6 fs-md-3 fs-sm-hide">
-        <img src="assets/@2xBuzz_rear_band.png" class="img-responsive">
+        <img src="<?php print PUBLIC_DIR . '@2xBuzz_rear_band.png'; ?>" class="img-responsive">
       </div>
     </div>
   </div>
