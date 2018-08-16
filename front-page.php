@@ -1,5 +1,12 @@
 <?php get_header(); ?>
 
+<div id="sub">
+  <div id="sub-button" class="swap" data-swap-target="#sub" data-swap-linked=".sub">Get Buzz Band</div>
+  <div id="sub-form" class="fs-grid-fluid">
+    <?php echo do_shortcode('[contact-form-7 id="17" title="Contact form 1"]'); ?>
+  </div>
+</div>
+
 <div id="content-wrap">
   <div id="content-headline">
     <div class="fs-row">
@@ -32,7 +39,7 @@
 <div id="layer-band-wrap" class="fs-grid-fluid">
   <div id="layer-band-1" class="pinned pinned--top">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-4 fs-lg-push-3 fs-md-3 fs-sm-3">
+      <div class="fs-cell fs-lg-4 fs-lg-push-3 fs-md-3 fs-sm-hide">
         <img src="assets/@2xAir_navy.png" class="img-responsive">
       </div>
     </div>
@@ -40,7 +47,7 @@
   <div id="layer-band-2">
     <div id="layer-band-2-wrapper">
       <div class="fs-row">
-        <div class="fs-cell fs-lg-3 fs-md-3 fs-sm-3 fs-lg-justify-end">
+        <div class="fs-cell fs-lg-3 fs-md-3 fs-sm-half fs-sm-push-half fs-lg-justify-end">
           <img src="assets/@2xAir_hero.png" class="img-responsive">
         </div>
       </div>
@@ -48,7 +55,7 @@
   </div>
   <div id="layer-band-3" class="pinned pinned--bottom">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-6 fs-md-3 fs-sm-3">
+      <div class="fs-cell fs-lg-6 fs-md-3 fs-sm-hide">
         <img src="assets/@2xBuzz_rear_band.png" class="img-responsive">
       </div>
     </div>
@@ -59,9 +66,7 @@
   <div id="background-layer-1">
     <img src="assets/background-bottom.svg" class="img-responsive">
   </div>
-  <div id="background-layer-2">
-    <img src="assets/background-bottom-2.svg" class="img-responsive">
-  </div>
+  <div id="background-layer-2" class="background" data-background-options='{"source":{"0px":"assets/option3.png","980px":"assets/background-bottom-2.svg"}}'></div>
 </div>
 
 <?php get_footer(); ?>

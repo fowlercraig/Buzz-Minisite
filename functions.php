@@ -39,3 +39,8 @@ define( 'STYLES_DIR', PUBLIC_DIR . '' );
 define( 'SCRIPTS_DIR', PUBLIC_DIR . '' );
 define( 'IMAGES_DIR', PUBLIC_DIR . 'images/' );
 define( 'VENDOR_SCRIPTS_DIR', THEME_ROOT . 'assets/' );
+
+add_action( 'wp_print_scripts', 'my_deregister_javascript', 100 );
+function my_deregister_javascript() {
+  wp_deregister_script( 'contact-form-7' );
+}

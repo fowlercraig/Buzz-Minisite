@@ -6,16 +6,42 @@
   }
 
   &-headline {
-    padding-top: 100px;
-    line-height: 1.2;
-    font-weight: 600;
+    
+    @media @min {
+      position: absolute;
+      top: 48px + 25px;
+      width: 100%;
+    }
+    @media @desktop {
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      transform: translateY(-50%);
+    }
+    
     & .logo {
-      margin-bottom: 65px
+      @media @min {
+        width: 120px;
+        margin-bottom: 35px
+      }
+      @media @tablet {
+        width: auto;
+        margin-bottom: 65px
+      }
+      
     }
     & .headline {
       font-weight: 600;
       color: @black;
-      font-size: 72px;;
+      @media @min {
+        font-size: 38px;
+        line-height: 1.1;
+        letter-spacing: -1px;
+      }
+      @media @tablet {
+        font-size: 72px;
+        line-height: 1;
+      }
     }
   }
 

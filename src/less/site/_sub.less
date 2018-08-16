@@ -1,0 +1,123 @@
+@size: 48px;
+
+#sub {
+
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  text-align: right;
+  height: @size;
+  -webkit-font-smoothing: antialiased;
+
+  & .fs-row {
+    margin: 0;
+    width: auto;
+  }
+
+  & .feather {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: .2;
+    cursor: pointer;
+    &:hover {
+      opacity: .5;
+    }
+    & img {
+      display: block;
+      height: 20px;
+      width: auto;
+    }
+  }
+
+  &-button {
+    height: @size;
+    line-height: @size;
+    background-color: #FF3A41;
+    color: @white;
+    font-weight: bold;
+    box-shadow: 0 20px 40px rgba(0,0,0,.1);
+    display: inline-block;
+    width: 155px;
+    text-align: center;
+    transition: 300ms ease;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    &:hover {
+      cursor: pointer;
+      background-color: darken(#FF3A41,10%)
+    }
+  }
+
+  &-form {
+    position: absolute;
+    visibility: hidden;
+    z-index: 99;
+    opacity: 0;
+    display: inline-block;
+    transition: 300ms ease;
+    box-shadow: 0 20px 40px rgba(0,0,0,.1);
+    right: 0;
+    @media @min {
+      width: 100%;
+    }
+    @media @tablet {
+      width: 450px;
+    }
+
+    & input, & span {
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      width: auto;
+      max-width: 100%;
+      height: @size;
+      line-height: @size;
+    }
+  }
+
+  &.fs-swap-active {
+    & #sub {
+      &-form {
+        opacity: 1;
+        visibility: visible;
+      }
+      &-button {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  & .wpcf7 {
+    &-text {
+      border: 0;
+      padding: 0 20px;
+      background-color: @white;
+      border-radius: 0;
+    }
+    &-submit {
+      background-color: #FF3A41;
+      display: inline-block;
+      width: 100%;
+      border-radius: 0;
+      text-align: left!important;
+      padding-left: 20px;
+    }
+    &-not-valid-tip {
+      display: none;
+    }
+    &-response-output {
+      font-size: 14px;
+      margin: 0;
+      background-color: @white;
+      text-align: center;
+      padding: 0;
+      height: @size;
+      line-height: @size;
+    }
+  }
+
+}
