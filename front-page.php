@@ -11,7 +11,7 @@
   <div id="content-headline">
     <div class="fs-row">
       <div class="fs-cell fs-lg-10 fs-md-full fs-sm-3">
-        <div class="logo"><img src="assets/buzzlogo.svg" class="img-responsive"></div>
+        <div class="logo"><img src="<?php print PUBLIC_DIR . 'buzzlogo.svg'; ?>" class="img-responsive"></div>
         <div class="carousel" data-carousel-options='{"single":true,"pagination": false, "controls": false}'>
           <?php $lines = get_field('messaging'); ?>
           <?php foreach ($lines as $line): ?>
@@ -64,7 +64,7 @@
 
 <div id="background-wrap">
   <div id="background-layer-1">
-    <img src="assets/background-bottom.svg" class="img-responsive">
+    <img src="<?php print PUBLIC_DIR . 'background-bottom.svg'; ?>" class="img-responsive">
   </div>
   <div id="background-layer-2" class="background" data-background-options='{"source":{"0px":"<?php print PUBLIC_DIR . 'option3.png'; ?>","980px":"<?php print PUBLIC_DIR . 'background-bottom-2.svg'; ?>"}}'></div>
 </div>
