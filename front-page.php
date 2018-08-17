@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="sub">
-  <div id="sub-button" class="swap" data-swap-target="#sub" data-swap-linked=".sub">Get Buzz Band</div>
+  <div id="sub-button" class="swap" data-swap-target="#sub" data-swap-linked=".sub">Get Buzz</div>
   <div id="sub-form" class="fs-grid-fluid">
     <?php echo do_shortcode('[contact-form-7 id="17" title="Contact form 1"]'); ?>
   </div>
