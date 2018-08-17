@@ -10,7 +10,7 @@
 <div id="content-wrap">
   <div id="content-headline">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-10 fs-md-full fs-sm-3">
+      <div class="fs-cell fs-lg-10 fs-md-5 fs-sm-3">
         <div class="logo"><img src="<?php print PUBLIC_DIR . 'buzzlogo.svg'; ?>" class="img-responsive"></div>
         <div class="carousel" data-carousel-options='{"single":true,"pagination": false, "controls": false}'>
           <?php $lines = get_field('messaging'); ?>
@@ -27,8 +27,8 @@
         <div class="fs-row">
           <?php the_post(); $content = get_the_content(); ?>
           <?php $list = explode("<hr>", $content); ?>
-          <div class="body fs-cell fs-lg-half"><span class="title"><?php echo $list[0]; ?> — </span><?php echo $list[1]; ?></div>
-          <div class="body fs-cell fs-lg-half"><?php echo $list[2]; ?></div>
+          <div class="body fs-cell fs-lg-half fs-md-3"><span class="title"><?php echo $list[0]; ?> — </span><?php echo $list[1]; ?></div>
+          <div class="body fs-cell fs-lg-half fs-md-3"><?php echo $list[2]; ?></div>
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@
 <div id="layer-band-wrap" class="fs-grid-fluid">
   <div id="layer-band-1" class="pinned pinned--top">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-4 fs-lg-push-3 fs-md-3 fs-sm-hide">
+      <div class="fs-cell fs-lg-4 fs-lg-push-3 fs-md-3 fs-md-push-2 fs-sm-hide">
         <img src="<?php print PUBLIC_DIR . '@2xAir_navy.png'; ?>" class="img-responsive">
       </div>
     </div>
@@ -46,7 +46,7 @@
   <div id="layer-band-2">
     <div id="layer-band-2-wrapper">
       <div class="fs-row">
-        <div class="fs-cell fs-lg-3 fs-md-3 fs-sm-half fs-sm-push-half fs-lg-justify-end">
+        <div class="fs-cell fs-lg-3 fs-md-3 fs-sm-half fs-sm-push-half fs-md-half fs-md-push-half fs-lg-justify-end">
           <img src="<?php print PUBLIC_DIR . '@2xAir_hero.png'; ?>" class="img-responsive">
         </div>
       </div>
@@ -54,7 +54,7 @@
   </div>
   <div id="layer-band-3" class="pinned pinned--bottom">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-6 fs-md-3 fs-sm-hide">
+      <div class="fs-cell fs-lg-6 fs-md-hide fs-sm-hide">
         <img src="<?php print PUBLIC_DIR . '@2xBuzz_rear_band.png'; ?>" class="img-responsive">
       </div>
     </div>
