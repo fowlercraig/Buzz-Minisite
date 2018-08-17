@@ -22,7 +22,7 @@
     </div>
   </div>
   <div id="content-mobile">
-    <img src="<?php print PUBLIC_DIR . 'background-bottom-mobile.png'; ?>" class="img-responsive">
+    <img src="<?php print PUBLIC_DIR . 'group.png'; ?>" class="img-responsive">
   </div>
   <div id="content-description" class="fs-grid-fluid">
     <div class="fs-row">

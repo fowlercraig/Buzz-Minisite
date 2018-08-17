@@ -108,6 +108,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/background-bottom-mobile.png": {
+		"ft": 32768,
+		"iS": 740766,
+		"oA": 0,
+		"oAP": "\/assets\/background-bottom-mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/background-bottom.svg": {
 		"ft": 2097152,
 		"miP": 0,
