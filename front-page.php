@@ -21,14 +21,13 @@
       </div>
     </div>
   </div>
-  <div id="content-description" class="pinned pinned--bottom">
+  <div id="content-description" class="pinned pinned--bottom fs-grid-fluid">
     <div class="fs-row">
       <div class="fs-cell fs-lg-half fs-lg-push-6">
         <div class="fs-row">
           <?php the_post(); $content = get_the_content(); ?>
           <?php $list = explode("<hr>", $content); ?>
-          <div class="title fs-cell fs-all-full"><?php echo $list[0]; ?></div>
-          <div class="body fs-cell fs-lg-half"><?php echo $list[1]; ?></div>
+          <div class="body fs-cell fs-lg-half"><span class="title"><?php echo $list[0]; ?> — </span><?php echo $list[1]; ?></div>
           <div class="body fs-cell fs-lg-half"><?php echo $list[2]; ?></div>
         </div>
       </div>
