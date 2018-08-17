@@ -21,7 +21,10 @@
       </div>
     </div>
   </div>
-  <div id="content-description" class="pinned pinned--bottom fs-grid-fluid">
+  <div id="content-mobile">
+    <img src="<?php print PUBLIC_DIR . 'background-bottom-mobile.png'; ?>" class="img-responsive">
+  </div>
+  <div id="content-description" class="fs-grid-fluid">
     <div class="fs-row">
       <div class="fs-cell fs-lg-half fs-lg-push-6">
         <div class="fs-row">
@@ -46,7 +49,7 @@
   <div id="layer-band-2">
     <div id="layer-band-2-wrapper">
       <div class="fs-row">
-        <div class="fs-cell fs-lg-3 fs-md-3 fs-sm-half fs-sm-push-half fs-md-half fs-md-push-half fs-lg-justify-end">
+        <div class="fs-cell fs-lg-3 fs-md-3 fs-sm-hide fs-md-half fs-md-push-half fs-lg-justify-end">
           <img src="<?php print PUBLIC_DIR . '@2xAir_hero.png'; ?>" class="img-responsive">
         </div>
       </div>
